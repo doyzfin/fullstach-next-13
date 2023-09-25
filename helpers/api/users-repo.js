@@ -21,8 +21,9 @@ async function authenticate({ username, password }) {
 
   if (!(user && bcrypt.compareSync(password, user.hash))) {
     logger.error({
-      message: "LOGIN ERROR",
-      data: null,
+      message: "Username or password is incorrect",
+      req: user,
+      res: null,
       date: moment(new Date(Date.now())).format("DD-MMM-YYYY hh:mm:ss"),
     });
     throw "Username or password is incorrect";
@@ -36,7 +37,12 @@ async function authenticate({ username, password }) {
   // remove hash from return value
   const userJson = user.get();
   delete userJson.hash;
-
+  logger.error({
+    message: "LOGIN",
+    req: user,
+    res: userJson,
+    date: moment(new Date(Date.now())).format("DD-MMM-YYYY hh:mm:ss"),
+  });
   // return user and jwt
   return {
     ...userJson,
@@ -94,7 +100,15 @@ async function update(id, params) {
 
 async function _delete(id) {
   const user = await db.User.findByPk(id);
-  if (!user) throw "User not found";
+  if (!user) {
+    logger.error({
+      message: "User not found",
+      req: user,
+      res: null,
+      date: moment(new Date(Date.now())).format("DD-MMM-YYYY hh:mm:ss"),
+    });
+    throw "User not found";
+  }
 
   // delete user
   await user.destroy();

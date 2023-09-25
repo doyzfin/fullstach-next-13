@@ -1,2 +1,11 @@
 {"data":null,"date":"25-Sep-2023 10:24:58","level":"error","message":"LOGIN ERROR"}
 {"data":null,"date":"25-Sep-2023 10:25:00","level":"error","message":"LOGIN ERROR"}
+{"data":null,"date":"25-Sep-2023 10:38:32","level":"error","message":"LOGIN ERROR"}
+{"data":null,"date":"25-Sep-2023 10:39:12","level":"error","message":"Username or password is incorrect"}
+{"date":"25-Sep-2023 10:39:52","level":"error","message":"Username or password is incorrect","req":{"password":"12345","username":"asd"},"res":null}
+{"date":"25-Sep-2023 10:41:05","level":"error","message":"Username or password is incorrect","req":{"user":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","hash":"$2a$10$pjDsFz2HGPRgVUvMoktiF.U229YajOz7KOXQSfhmv8FBOTYvDHRe6","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"}},"res":null}
+{"date":"25-Sep-2023 10:41:50","level":"error","message":"Username or password is incorrect","req":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","hash":"$2a$10$pjDsFz2HGPRgVUvMoktiF.U229YajOz7KOXQSfhmv8FBOTYvDHRe6","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"},"res":null}
+{"date":"25-Sep-2023 10:41:53","level":"error","message":"Username or password is incorrect","req":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","hash":"$2a$10$pjDsFz2HGPRgVUvMoktiF.U229YajOz7KOXQSfhmv8FBOTYvDHRe6","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"},"res":null}
+{"date":"25-Sep-2023 10:41:59","level":"error","message":"Username or password is incorrect","req":null,"res":null}
+{"date":"25-Sep-2023 11:09:34","level":"error","message":"LOGIN","req":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"},"res":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"}}
+{"date":"25-Sep-2023 11:12:28","level":"error","message":"LOGIN","req":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"},"res":{"createdAt":"2023-09-25T03:05:00.000Z","firstName":"asd","id":4,"lastName":"asd","updatedAt":"2023-09-25T03:05:00.000Z","username":"asd"}}
